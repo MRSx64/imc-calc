@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+body{
+    background:linear-gradient(to right, rgba(166, 198, 224, 0.801), rgba(30, 98, 153, 0.801));
+    font-size: 1.4em;
+    align-content: center;
+    text-align: center;
+    font-weight: 400;
+}
+header{
+    padding: 2em;
+    height: 4em;
+}
+
+section h1{
+    font-size: 5rem;
+}
+
+section h2{
+    font-size: 1.5rem;
+}
+
+main{
+    height: 15em;
+}
+.container{
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background-color: rgba(78, 49, 49, 0.5);
+    padding: 1em;
+    border-radius: 10px;}
+
+.container h2{
+    color: rgba(171, 208, 236, 0.822)
+}
+
+button{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black ;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(84, 167, 67);
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+input{
+    width: 9em;
+    height: 2.5em;
+    padding: 0 0.5rem;
+    margin-top: 14px;
+    color: rgb(41, 39, 39);
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 1px solid #040b18;
+    border-radius: 8px;
+    background:#ffffff;
+}
+
+
+input[type="submit"]:hover{
+    background: rgba(80, 131, 173, 0.952);
+    color: rgb(255, 255, 255); 
+}
+
+.second-step,
+.final-step{
+    display: none;
+}
+footer p{
+    padding-top: 5em;
+    font-size: 1em;
+    font-weight: 800;
+}
+@media only screen and (max-width: 600px){
+
+    header{
+        padding: 1.5em;
+        height: 6em;
+    }
+    section h1{
+        font-size: 3rem;}
+
+    section h2{
+            font-size: 1.2rem;
+        }
+    
+    .container{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        padding: 1em;
+        border-radius: 10px;}
+    .container h2{
+        color: rgba(171, 208, 236, 0.822);
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+    .container p{
+        color: white;
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+    .container button{
+        font-size: 12px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    label{
+            font-size: 1em;
+            font-weight: 400;}
+
+    input{
+        height: 2em;
+        padding: 0 0.5rem;
+        margin-top: 12px;
+        color: rgb(41, 39, 39);
+        font-size: 1rem;
+        font-weight: 400;
+        border: 1px solid #040b18;
+        border-radius: 8px;
+        background:#dee1e9;
+    }
+    footer p{
+        padding: 0.5em;
+        font-size: 0.6em;
+        font-weight: 800;
+    }      
+                
+}
+
