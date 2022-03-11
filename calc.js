@@ -68,32 +68,32 @@ function validacao()
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Magreza | Obesidade: Grau 0';
         }
-        else if (imc >= 18.5 && imc < 25)
+        else if (imc >= 18.5 && imc < 24.9)
         {
             console.log('Normal | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Normal | Obesidade: Grau 0'
         }
-        else if (imc >= 25 && imc < 30)
+        else if (imc >= 25 && imc < 29.9)
         {
             console.log('Sobrepeso| Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Sobrepeso| Obesidade: Grau 0';
         }
-        else if (imc >= 30 && imc < 35)
+        else if (imc >= 30 && imc < 34.9)
         {
             console.log('Obesidade | Obesidade:  Grau I');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Obesidade | Obesidade:  Grau I';
         }
-        else if (imc >= 35 && imc < 40)
+        else if (imc >= 35 && imc < 39.9)
         {
             console.log('Obesidade | Obesidade:  Grau II');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Obesidade | Obesidade:  Grau II';
         }
-        else
-        {
+        else (imc >= 40)
+        {  
             console.log('Obesidade | Obesidade grave:  Grau III');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Obesidade | Obesidade grave:  Grau III';
