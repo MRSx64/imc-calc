@@ -72,7 +72,7 @@ function validacao()
         {
             console.log('Normal | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Normal | Obesidade: Grau 0'
+            resultado.innerHTML = 'Normal | Obesidade: Grau 0';
         }
         else if (imc >= 25 && imc < 30)
         {
@@ -92,7 +92,7 @@ function validacao()
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Obesidade | Obesidade:  Grau II';
         }
-        else (imc >= 40)
+        else 
         {  
             console.log('Obesidade | Obesidade grave:  Grau III');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
