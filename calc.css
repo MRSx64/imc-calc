@@ -121,7 +121,7 @@ footer p{
     
     .container{
         position: absolute;
-        transform: translate(-50%,-65%);
+        transform: translate(-50%,-80%);
         padding: 1em;
         margin: 1em 0;
         border-radius: 10px;}
