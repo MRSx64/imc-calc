@@ -9,6 +9,7 @@ body{
     align-content: center;
     text-align: center;
     font-weight: 400;
+    height: 34em;
 }
 header{
     padding: 2em;
@@ -24,7 +25,7 @@ section h2{
 }
 
 main{
-    height: 15em;
+    height: 20em;
 }
 .container{
     color: white;
@@ -82,6 +83,10 @@ input[type="submit"]:hover{
 .second-step,
 .final-step{
     display: none;
+}
+footer{
+    margin: 2em 0;
+    height: 2em;
 }
 footer p{
     padding-top: 5em;
