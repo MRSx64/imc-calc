@@ -11,12 +11,9 @@ body{
     font-weight: 400;
     height: 56em;
 }
-header{
-    padding: 2em;
-    height: 4em;
-}
+
 header section{
-    margin: 1em 2em 2em 2em;
+    margin: 1em;
 }
 header section h1{
     font-size: 5rem;
@@ -106,13 +103,11 @@ footer p{
 }
 @media only screen and (max-width: 600px){
 
-
     body{
         height: 38em;
     }
     header{
-        padding: 1.5em;
-        height: 6em;
+        margin: 1em;
     }
     header section h1{
         font-size: 3rem;}
@@ -121,13 +116,14 @@ footer p{
             font-size: 1.2rem;
         }
     main {
-        height: 14em;
+        height: 20em;
     }
     
     .container{
         position: absolute;
         transform: translate(-50%,-50%);
         padding: 1em;
+        margin: 1em 0;
         border-radius: 10px;}
     .container h2{
         color: rgba(171, 208, 236, 0.822);
