@@ -9,18 +9,20 @@ body{
     align-content: center;
     text-align: center;
     font-weight: 400;
-    height: 34em;
+    height: 56em;
 }
 header{
     padding: 2em;
     height: 4em;
 }
-
-section h1{
+header section{
+    margin: 1em 2em 2em 2em;
+}
+header section h1{
     font-size: 5rem;
 }
 
-section h2{
+header section h2{
     font-size: 1.5rem;
 }
 
@@ -84,27 +86,43 @@ input[type="submit"]:hover{
 .final-step{
     display: none;
 }
+section{
+    margin: 2em 2em;
+}
+
+section img{
+    width: 24em;
+    height: 20em;
+}
 footer{
     margin: 2em 0;
     height: 2em;
 }
 footer p{
-    padding-top: 5em;
-    font-size: 1em;
+    margin: 2em;
+    padding: 1em;
+    font-size: 0.8em;
     font-weight: 800;
 }
 @media only screen and (max-width: 600px){
 
+
+    body{
+        height: 38em;
+    }
     header{
         padding: 1.5em;
         height: 6em;
     }
-    section h1{
+    header section h1{
         font-size: 3rem;}
 
-    section h2{
+    header section h2{
             font-size: 1.2rem;
         }
+    main {
+        height: 14em;
+    }
     
     .container{
         position: absolute;
@@ -141,6 +159,10 @@ footer p{
         border: 1px solid #040b18;
         border-radius: 8px;
         background:#dee1e9;
+    }
+    section img{
+        width: 9em;
+        height: 10em;
     }
     footer p{
         padding: 0.5em;
