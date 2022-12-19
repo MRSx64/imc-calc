@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
 
 body{
     background:linear-gradient(to right, rgba(166, 198, 224, 0.801), rgba(30, 98, 153, 0.801));
@@ -9,7 +9,6 @@ body{
     align-content: center;
     text-align: center;
     font-weight: 400;
-    height: 56em;
 }
 
 header{
@@ -18,9 +17,9 @@ header{
 }
 
 header img{
-    max-width: 30%;
-    margin-top: 20px;
-    border-radius: 20px;
+    max-height: 20vh;
+    margin-top: 40px;
+    border-radius: 16px;
 }
 
 header section{
@@ -39,12 +38,12 @@ header section p{
 }
 
 main{
-    height: 20em;
+    height: 14em;
 }
 .container{
     color: white;
     position: absolute;
-    top: 60%;
+    top: 17em;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 50%;
@@ -98,13 +97,19 @@ input[type="submit"]:hover{
 .final-step{
     display: none;
 }
+
+#figura img{
+   max-height: 4em;
+   margin: 10px;
+   border-radius: 12px;
+}
 section{
-    margin: 2em 2em;
+    margin: 2em;
 }
 
 section img{
-    width: 24em;
-    height: 20em;
+    width: 16em;
+    height: 16em;
 }
 footer{
     margin: 2em 0;
@@ -116,70 +121,117 @@ footer p{
     font-size: 0.8em;
     font-weight: 800;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
 
-    body{
-        height: 38em;
-    }
     header{
         margin: 1em;
     }
     header section h1{
-        font-size: 3rem;}
+        font-size: 2.8rem;}
 
     header section h2{
             font-size: 1.2rem;
         }
-    main {
-        height: 20em;
-    }
+    
+        header section p{
+            font-size: 2.8rem;
+        }
     
     .container{
-        position: absolute;
-        transform: translate(-50%,-80%);
-        padding: 1em;
-        margin: 1em 0;
-        border-radius: 10px;}
+        transform: translate(-50%,-24%);
+        margin-top: 12px;
+        top: 14em;
+    }
+
     .container h2{
         color: rgba(171, 208, 236, 0.822);
         font-size: 1em;
         padding-bottom: 10px;
     }
     .container p{
-        color: white;
-        font-size: 0.6em;
+        font-size: 1em;
         font-weight: 600;
     }
     .container button{
-        font-size: 12px;
+        font-size: 20px;
         padding: 10px;
         margin: 5px;
     }
 
-    label{
-            font-size: 1em;
-            font-weight: 400;}
-
     input{
-        height: 2em;
-        padding: 0 0.5rem;
-        margin-top: 12px;
-        color: rgb(41, 39, 39);
         font-size: 1rem;
-        font-weight: 400;
-        border: 1px solid #040b18;
-        border-radius: 8px;
-        background:#dee1e9;
     }
-    section img{
-        width: 9em;
-        height: 10em;
+    .container button {
+        font-size: 16px;}
+
+    section {
+     margin: 1em;
+            }
+    section img {
+         width: 14em;
+         height: 12em;
+        }
+    
+    footer{
+        margin: 1em;
     }
     footer p{
-        padding: 0.5em;
-        font-size: 0.6em;
-        font-weight: 800;
+        font-size: 0.8em;
     }      
                 
+}
+@media only screen and (max-width: 500px){
+
+    
+    
+    header{
+        margin: 1em;
+    }
+    header img {
+        max-height: 14vh;}
+
+    header section h1{
+        font-size: 2.4rem;}
+    
+        header section p{
+            font-size: 2.5rem;
+        }
+        main {
+            height: 16em;
+        }
+    .container{
+        transform: translate(-50%,-22%);
+        width: 64%;
+    }
+
+
+    .container p{
+        font-size: 0.8em;
+    }
+    .container button{
+        font-size: 14px;
+    }
+    label {
+        font-size: 1em;
+        }
+
+    input{
+        font-size: 1rem;
+    }
+
+    
+    section img {
+        width: 10em;
+        height: 10em;}
+
+    footer  {
+        height: 1em;
+        }
+
+    footer p{
+        font-size: 0.5em;
+    }   
+     
+             
 }
 

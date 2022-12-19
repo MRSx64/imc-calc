@@ -23,14 +23,14 @@
                 <p>Clique no botão para calcular o seu IMC</p>
                 <br><br>
                 <button onclick="go(1,2)">Iniciar</button>
-
             </div>
+
             <div class="second-step">
                 <label for="campoPeso">Digite o seu peso</label>
-                <input type="number" name='pes' id="campoPeso"  placeholder="Peso" >
+                <input type="number" name='pes' id="campoPeso"  placeholder="Peso" maxlength="3" max="150" min="2" required>
                 <br><br>
                 <label for="campoAltura">Digite a sua altura</label>
-                <input type="number"  name='alt' id="campoAltura" placeholder="Altura" > 
+                <input type="number"  name='alt' id="campoAltura" placeholder="Altura" required> 
                 <br><br>
                 <button onclick="validacao()">Calcular</button>
             </div>
@@ -39,7 +39,9 @@
                 <h2>Resultado:</h2>
                 <p id="valor"></p>
                 <p id="res"></p>
-                <br><br>
+                <div id="figura">
+                    <img id="imagem" src="/imagens/susto.jpg" alt="">
+                </div>
                 <button onclick="go(3,2)">Calcular Novamente</button>
                 <button onclick="go(3,1)">Finalizar</button>
             </div> 

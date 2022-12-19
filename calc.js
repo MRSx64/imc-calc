@@ -61,42 +61,49 @@ function validacao()
     let imc = peso.value/(altura.value**2);
     const resultado = document.getElementById('res')
     const resimc = document.getElementById('valor')
+    const img = document.getElementById('imagem')
     
         if (imc < 18.5) 
         {
             console.log('Magreza | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Só osso | Obesidade: Grau 0';
+            img.src = 'susto.jpg'
         }
         else if (imc >= 18.5 && imc < 25)
         {
             console.log('Normal | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Normal | Obesidade: Grau 0';
+            img.src = 'Marcinha.jpg'
         }
         else if (imc >= 25 && imc < 30)
         {
             console.log('Sobrepeso| Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Disquinho| Obesidade: Grau 0';
+            resultado.innerHTML = 'Disquinho(a) | Obesidade: Grau 0';
+            img.src = 'veio.jpg'
         }
         else if (imc >= 30 && imc < 35)
         {
             console.log('Obesidade | Obesidade:  Grau I');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
             resultado.innerHTML = 'Bolota | Obesidade:  Grau I';
+            img.src = 'Mari2.jpg'
         }
         else if (imc >= 35 && imc < 40)
         {
             console.log('Obesidade | Obesidade:  Grau II');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Gordo | Obesidade:  Grau II';
+            resultado.innerHTML = 'Redondo(a) | Obesidade:  Grau II';
+            img.src = 'Mari.jpg'
         }
         else 
         {  
             console.log('Obesidade | Obesidade grave:  Grau III');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Dieta urgente! | Obesidade grave:  Grau III';
+            resultado.innerHTML = 'Dieta urgente! | Obesidade Mórbida:  Grau III';
+            img.src = 'avos.jpg'
         }
         go(2,3);
     }
