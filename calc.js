@@ -67,21 +67,21 @@ function validacao()
         {
             console.log('Magreza | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Só osso | Obesidade: Grau 0';
+            resultado.innerHTML = 'Só osso | Abaixo do peso';
             img.src = 'susto.jpg'
         }
         else if (imc >= 18.5 && imc < 25)
         {
             console.log('Normal | Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Normal | Obesidade: Grau 0';
+            resultado.innerHTML = 'Normal';
             img.src = 'Marcinha.jpg'
         }
         else if (imc >= 25 && imc < 30)
         {
             console.log('Sobrepeso| Obesidade: Grau 0');
             resimc.innerHTML = `IMC de ${imc.toFixed(0)}`;
-            resultado.innerHTML = 'Disquinho(a) | Obesidade: Grau 0';
+            resultado.innerHTML = 'Disquinho(a) | Sobrepeso';
             img.src = 'veio.jpg'
         }
         else if (imc >= 30 && imc < 35)
