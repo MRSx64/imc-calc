@@ -18,9 +18,9 @@ header{
 }
 
 header img{
-    width: 10em;
-    height: 10em;
+    max-width: 30%;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 header section{
